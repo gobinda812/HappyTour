@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*========================Nav Bar=========================*/
+.navbar img {
+    height: 75px;
+    width: auto;
+}
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    z-index: 1;
+}
+.navbar  a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: midnightblue;
+    cursor: pointer;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: midnightblue;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: relative;
+        background-color: #44bbd2;
+        padding-left: 44%;
+        padding-right: 44%;
+        left: -330px;
+        top: -8px;
+        
+
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        border-bottom-right-radius: 20px;
+    }
+
+    .navbar-collapse.show {
+        transition: left 400ms ease-in-out;
+        
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        height: 75%;
+        transition: left 400ms ease-in;
+    }
+}
+.navbar-toggler {
+    padding: 0;
+    font-size: none;
+    line-height: 0;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    transition: none;
+}
+
+.toggler{
+    width: 25px;
+}
+
+.toggler span{
+    width: 100%;
+    height: 3px;
+    background: #000;
+    display: block;
+    margin: 5px 0;
+    transition: all .2s linear;
+}
+
+.toggler-trigger span:nth-child(1){
+    transform: rotate(45deg);
+}
+.toggler-trigger span:nth-child(2){
+    display: none;
+}
+.toggler-trigger span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -7px;
+}
+
+/*===============Footer===================*/
+
+#footer {
+	padding: 20px 0 0 0;
+    background: url(../img/footerbg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#footer h5{
+	font-weight: 600;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	padding-left: 6px !important;
+    padding-bottom: 6px;
+    padding-right: 80px;
+    border-left: 3px solid #eeeeee;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer p{
+    color:#ffffff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+#footer ul.quick-links li{
+	font-size: 15px;
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links img{
+    height: 80px;
+    width: 110px;
+    border-radius: 5px;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:400;	
+}
+
+.foot_contact{
+    border-top: 1px dashed rgba(255,255,255,0.21);
+    border-bottom: 1px dashed rgba(255,255,255,0.21);
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#footer ul.foot_contact li{
+	font-size: 15px;
+	padding: 11px 5px 11px 0;   
+    
+}
+
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a{
+    margin-right: 5px;
+	font-size:30px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a{
+	font-size:25px;
+	margin-top:-10px;
+	
+}
+.foot-text_little{
+    border-bottom: 1px dashed rgba(255,255,255,0.21);
+    padding-bottom: 10px;
+    font-size: 15px !important;
+
+}
+.foot-text_head{
+    color:rgb(164, 156, 156) !important;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}

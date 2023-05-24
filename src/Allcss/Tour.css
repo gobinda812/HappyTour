@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tour_bg{
+  background: url("../img/bodybg.png");
+}
+.jumbotron{
+color: #fff;
+background: url("../img/bhutan3.jpg") no-repeat center;
+background-size:cover;
+background-attachment: fixed;
+height: 350px;
+text-align:center;
+}
+.jumbotron .banner_text{
+  padding: 100px 0 0 0;
+}
+.banner_text h2{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:600;
+  font-size: 50px;
+}
+.banner_text p{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:400;
+  font-size: 20px;
+}
+/*Tabbed Content*/
+.tour_tab>.nav-tabs {
+  border: none !important;
+  border: 5px solid rgba(40,44,42,0.09) !important;
+}
+.nav-tabs .tour-link.active {
+  background-color:#6dc123 !important;
+  padding: 0;
+  color: #fff !important;
+  border-radius: 0;
+}
+
+.nav-fill .nav-item .tour-link,
+.nav-justified .nav-item .tour-link {
+  width: 100%;
+  color: #000;
+}
+
+.nav-tabs .tour-link {
+  padding: 0;
+}
+.tour-link {
+  border-right: 2px solid rgba(40,44,42,0.09) !important;
+  border-left: 2px solid rgba(40,44,42,0.09) !important;
+  border-top: 2px solid rgba(40,44,42,0.09) !important;
+  border-bottom: 2px solid rgba(40,44,42,0.09) !important;
+  height: 77px;
+  font-size: 18px;
+  background-color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.tour-link:hover {
+  padding: 0;
+}
+.flight-where-from:after {
+  position: absolute;
+  content: '23';
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.card{
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(216, 216, 216);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(216, 216, 216);
+    box-shadow: 0px 0px 10px 0px rgb(216, 216, 216);
+}
+.tour_heading h3{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.tour_detail h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  color: #1a0570;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.tour_detail p{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000
+}
+.tour_highlight h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  font-size: 30px;
+  color: #57a302;
+  border-bottom: 1px dashed #000;
+}
+.tour_highlight ul{
+  list-style-type: none;
+}
+.tour_highlight li{
+  list-style-type: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  color: #000;
+  padding: 5px;
+  font-size: 18px;
+}
+.tour_price h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  font-size: 50px;
+  color: #0207a3;
+}
+.tour_price p{
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.wrapper {
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  box-shadow: 20px 20px 80px rgb(206, 206, 206)
+}
+
+.h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #6dc123;
+  font-style: italic
+}
+.input-field {
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #6dc123;
+}
+
+input {
+  color:#0207a3;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+::placeholder {
+  color: #000;
+}
+
+.error{
+  color: red;
+}
+input[type="text"] {
+  font-weight: 500;
+}
+.btn.btn-block {
+  border-radius: 5px;
+  background-color: #6dc123;
+  color: #fff
+}
+
+.btn.btn-block:hover {
+  background-color: #6dc123;
+}
+/*Right Side*/
+.geeks {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks img {
+  width: 100%;
+  height: 100px;
+  transition: 0.8s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.2);
+}
+.rgtbtn{
+  background-color: #6ad60b;
+  color:#fff;
+  padding: 5px 20px;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.rgtbtn:hover{
+  color: #fff;
+  background-color: #4923e5;
+}
+.details{
+  margin: 0;
+}
+.right_para{
+  font-size: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #ffa50a;
+  font-weight: 600;
+}
+.right_little{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+.right_title{
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #0207a3;
+  font-weight: 600;
+}
+.right_header{
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #6ad60b;
+  font-weight: 600;
+
+}

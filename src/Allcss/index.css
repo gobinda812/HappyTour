@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Carousel start*/
+.carousel {
+    margin-bottom: 4rem;
+    overflow-x: hidden;
+    
+  }
+  .carousel-caption {
+    bottom: 10rem;
+  }
+  .carousel-item {
+    height: 40rem;
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 45rem;
+    
+  }  
+  .carousel-caption p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #010579;
+    font-weight: 900 !important;
+  }
+  .carousel-caption h2{
+    font-family: Satisfy;
+    font-size: 100px;
+    font-weight:300px;
+    color: #F9D423;
+  }
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.8;
+  z-index: 1;
+}
+  .carright, .carleft{
+    font-size: 30px;
+    padding: 5px;
+    background-color: #F9D423;
+    border-radius: 10%;
+    color:#fff;
+    background-image: none;
+  }
+  .carright, .carleft:hover{
+    color: #fff !important;
+  }
+
+
+  /*search bar*/
+.search-sec{
+    background: #fff;
+	padding: 3rem;
+	margin-top: -140px;
+    z-index: 1;
+    position: relative;
+	margin-left:80px;
+	margin-right:80px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius:20px;
+ 
+}
+
+.search-sec label{
+	color: #262626;
+    font-size: 18px;
+    font-weight: 600;
+	margin-bottom:20px;
+    font-family: 'Barlow Condensed', sans-serif;
+   }
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #F9D423;
+    border-radius:0;
+	border-radius:20px;
+    padding: 15px;
+}
+.search-slt:focus{
+    border: 1px solid #F9D423; 
+    box-shadow: 0 0 0 0.25rem rgba(225, 240, 9, 0.861);
+}
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+     height: 3rem !important;
+     border-radius:0;
+	 border-radius:20px;
+	 margin-top:45px;
+     font-family: 'Barlow Condensed', sans-serif;
+}
+@media screen and (max-width: 400px) {
+    .carousel-caption h2{
+        font-size: 40px;
+        font-weight:300px;
+    }
+    .search-sec{
+        padding: 1rem;
+        margin-left:50px;
+        margin-right:50px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+    .search-sec{
+        padding: 1rem;
+    }
+    .search-slt{
+        width: 100%;
+        
+        }
+    }
+    @media screen and (max-width: 767px) {
+        
+    .search-sec{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top: -55px;
+        
+        
+        }
+        .search-sec label{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom:20px;
+        margin-top:20px;
+        margin-left:1px !important;
+       }
+    }
+    
+    @media screen and (max-width: 900px) {
+    .search-sec{
+        padding: 1rem;
+         
+    }
+    }
+
+    /*service_card*/
+    .service{
+        margin-top: 5rem;
+    }
+    .service_card {
+        text-align: center;
+        transition: all 1s;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service_card:hover {
+        box-shadow: 3px 3px 20px lightsteelblue;
+    }
+    
+    .service_card p {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 18px;
+        color: #010579;
+        font-weight: 900;
+        text-align: center;
+        flex: 1;
+    }
+    
+    .service_card img {
+        margin-top: 2rem;
+        width: 60px;
+        height: 60px;
+        flex: 1;
+    }
+    .service_card p:hover{
+        box-shadow: none;
+    }
+    .service_card img:hover{
+        box-shadow: none;
+    }
+
+    /*Packages*/
+    .package{
+        margin-top: 4rem;
+    }
+    .section-title h4 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 40px;
+        position: relative;
+        color: #010579;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-family: 'Ubuntu', sans-serif;
+        
+    }
+    .section-title h4:before {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: #F9D423;
+        bottom: 0;
+        left: 50%;
+        margin-left: -30px;
+    }
+    .section-title h4:after {
+        position: absolute;
+        background-color: #F9D423;
+        content: "";
+        width: 10px;
+        height: 10px;
+        bottom: -4px;
+        left: 50%;
+        margin-left: -5px;
+        border-radius: 50%;
+    }
+
+    .package{
+        background-image: url('../img/bodybg.png');
+        padding: 10px;
+    }
+    .tour_slider{
+        border: none;
+        box-shadow: 3px 3px 20px lightsteelblue;
+    }
+    .card img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .zoom-img {
+        float: left;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    .zoom-img .img-card {
+        position: absolute;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    
+    .img-card img {
+        -webkit-transition: 0.8s ease;
+        transition: 0.8s ease;
+    }
+    
+    .card:hover .zoom-img img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .package_heading{
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 900;
+        color: #010579;
+        padding-bottom: 15px;
+    }
+    .package_para{
+        font-size: 16px;
+        font-weight: 900;
+        font-family: 'Barlow Condensed', sans-serif;
+        border-bottom: 1px dashed #000000;
+        padding-bottom: 15px;
+    }
+    .package_but{
+        background-color: #F9D423;
+        color: #fff;
+        padding: 8px 8px;
+        text-decoration: none;
+    }
+    .package_but:hover{
+        color: #fff;
+    }
+    
+      .image-zoom {	
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px !important;
+      }
+      .image-zoom img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s ease;
+        overflow: hidden;
+      }
+      
+      .image-zoom:hover img {
+        transform: scale(1.2);
+      }
+      
+      .gal_caption {
+        position:absolute;
+        z-index:10;
+        text-align:left;
+        overflow:hidden;
+        border-radius:0 0 10px 10px;
+        transform: translate(8px, -50px);
+    }
+    .gal_caption h3 {
+        font-size: 25px;
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 2px #000000;
+        color: #fff;
+    }
+    /*Tour list Page*/
+    .tourlist{
+        background: url("../img/bodybg.png");
+      }
+      .tour_details_banner{
+      color: #fff;
+      background: url("../img/bhutan3.jpg") no-repeat center;
+      background-size:cover;
+      background-attachment: fixed;
+      height: 350px;
+      text-align:center;
+      }
+      .tour_details_banner .banner_text{
+        padding: 150px 0 0 0;
+      }
+      .banner_text h2{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:600;
+        font-size: 50px;
+      }
+      /* .banner_text p{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:400;
+        font-size: 20px;
+      } */
+
+    .ratings{
+        font-size: 16px;
+        color: #F9D423;
+        }
+        .strike-text{
+        color: red;
+        text-decoration: line-through;
+        }
+        
+        .imdet {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 5px;
+          }
+          
+          .imdet img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+            transition: 0.8s all ease-in-out;
+          }
+          
+          .imdet:hover img {
+            border-radius: 5px;
+            transform: scale(1.2);
+          }
+        
+        .dot{
+        height: 7px;
+        width: 7px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 3px;
+        background-color: blue;
+        border-radius: 50%;
+        display: inline-block
+        }
+
+        .tour_list_head {
+        font-size: 25px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+        color: #010579;
+        border-bottom: 1px dashed #000000;
+        padding-bottom: 15px;
+
+        }
+        .detail_para{
+        font-size: 16px;
+        font-weight: 900;
+        font-family: 'Barlow Condensed', sans-serif;
+        }
+        .spec{
+            font-size: 16px;
+            font-weight: 900;
+            font-family: 'Barlow Condensed', sans-serif;
+            }
+        .detail_button{
+            background-color: #6ad60b;;
+            color:#fff;
+            padding: 8px 8px;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 2px;
+            text-align: center;
+          }
+          .detail_button:hover{
+            color: #fff;
+          }      
+
+        /*Right Side*/
+.geeks {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .geeks img {
+    width: 100%;
+    height: 100px;
+    transition: 0.8s all ease-in-out;
+  }
+  
+  .geeks:hover img {
+    transform: scale(1.2);
+  }
+  
+  .rgtbtn{
+    background-color: #6ad60b;;
+    color:#fff;
+    padding: 5px 20px;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .rgtbtn:hover{
+    color: #fff;
+    background-color: #4923e5;
+  }
+  .details{
+    margin: 0;
+  }
+  .right_para{
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #6ad60b;
+    font-weight: 600;
+  }
+  .right_little{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #000;
+    font-weight: 600;
+  }
+  .right_title{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0207a3;
+    font-weight: 600;
+  }
+  .right_header{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6ad60b;
+    font-weight: 600;
+  
+  }
