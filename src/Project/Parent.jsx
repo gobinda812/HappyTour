@@ -12,12 +12,6 @@ import AboutUs from './AboutUs';
 const Parent = () => {
   return (
     <>
-    {/* <Nav/>
-    <Index/>
-    <Footer/> 
-    <Contact/>
-    <TourList/> 
-    <TourDetails/> */}
     <Router>
       <Nav/>
         <Routes>

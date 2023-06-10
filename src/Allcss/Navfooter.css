@@ -49,15 +49,31 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 480px){
+    .navbar-collapse {
+        top: -20px !important;
+        padding-right: 34% !important;
+        padding-left: 34% !important;
+
+    }
+    .navbar img {
+        height: 60px;
+        transform: translateY(-15px);
+    }
+    .navbar-toggler {
+        transform: translateY(-15px);
+    }
+
+  }  
 @media (max-width: 991px) {
     .navbar-collapse {
         position: relative;
-        background-color: #44bbd2;
+        background-color: #fff;
         padding-left: 44%;
         padding-right: 44%;
-        left: -330px;
+        left: -120px;
         top: -8px;
-        
+        border-bottom-right-radius: 20px;
 
     }
 

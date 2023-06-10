@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { FreeMode, Navigation, Pagination, Scrollbar } from "swiper";
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
