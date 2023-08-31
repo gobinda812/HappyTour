@@ -15,6 +15,7 @@ const Parent = () => {
     <Router>
       <Nav/>
         <Routes>
+          <Route path="/HappyTour" element={<Index/>} />
           <Route path="/" element={<Index/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/tourlist" element={<TourList/>} />
